@@ -27,6 +27,8 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  vertical-align: top;
+  margin-left: .5em;
 }
 
 a:hover {
@@ -59,6 +61,26 @@ header nav ul li:hover a {
   color: #000;
 }
 
+.logo {
+  width: 140px;
+  height: 120px;
+}
+
+.st1 {
+  fill: #eaaa7f;
+  display: none;
+}
+
+.logo-text {
+  color: #eaaa7f;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.st2 {
+  fill: #f4c6a6;
+}
+
 main {
   padding-top: 50px;
 }
@@ -67,9 +89,60 @@ main h2 {
   font-size: 28px;
 }
 
+.corgi-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+}
+
+.corgi-container div {
+  margin: 0;
+  padding: 0;
+}
+
+.corgi-sable {
+  color: #b97f5b;
+}
+
+.corgi-fawn {
+  color: #e9aa82;
+}
+
+.corgi-red {
+  color: #834b29;
+}
+
+.corgi-stone {
+  color: #52595e;
+}
+
+.corgi-text {
+  color: #eaaa7f;
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
 }
+
+@media (min-width: 425px) {
+  .logo-text {
+    display: none;
+  }
+
+  .st1 {
+    display: inherit;
+  }
+}
+
+
+
+
+
+/*
+sable: #b97f5b
+fawn: #e9aa82
+red:
+stone:  */
