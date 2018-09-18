@@ -35,6 +35,15 @@ a:hover {
   color: #111;
 }
 
+#nav svg {
+  transition: .2s ease-in-out;
+}
+
+#nav svg:hover {
+  transform: scale(1.2);
+}
+
+
 header {
   padding-top: 10px;
 }
@@ -64,6 +73,15 @@ header nav ul li:hover a {
 .logo {
   width: 140px;
   height: 120px;
+  transition: .25s cubic-bezier(0,-0.09,1,1.73);
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.logo:hover .st2 {
+  fill: pink;
 }
 
 .st1 {
@@ -92,12 +110,15 @@ main h2 {
 .corgi-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   max-width: 960px;
+  padding-right: 5%;
 }
 
 .corgi-container div {
   margin: 0;
   padding: 0;
+  max-width: 200px;
 }
 
 .corgi-sable {
@@ -118,6 +139,9 @@ main h2 {
 
 .corgi-text {
   color: #eaaa7f;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 0;
 }
 
 footer {
